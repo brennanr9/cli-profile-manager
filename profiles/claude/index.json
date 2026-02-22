@@ -1,22 +1,39 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2026-02-16T00:00:00Z",
+  "lastUpdated": "2026-02-22T07:03:08.040Z",
   "profiles": [
     {
       "name": "devtools",
       "author": "marketplace",
       "version": "1.0.0",
       "description": "Developer productivity commands for dependency auditing, performance profiling, and scaffolding",
-      "tags": ["productivity", "scaffolding", "dependencies"],
+      "tags": [
+        "productivity",
+        "scaffolding",
+        "dependencies"
+      ],
       "downloads": 0,
       "stars": 0,
       "createdAt": "2026-02-16T00:00:00Z",
       "contents": {
-        "instructions": ["CLAUDE.md"],
-        "commands": ["deps", "perf", "scaffold"],
-        "hooks": ["pre-commit"],
-        "skills": ["debug", "refactor"],
-        "agents": ["code-reviewer"]
+        "instructions": [
+          "CLAUDE.md"
+        ],
+        "commands": [
+          "deps",
+          "perf",
+          "scaffold"
+        ],
+        "hooks": [
+          "pre-commit"
+        ],
+        "skills": [
+          "debug",
+          "refactor"
+        ],
+        "agents": [
+          "code-reviewer"
+        ]
       }
     },
     {
@@ -24,14 +41,26 @@
       "author": "marketplace",
       "version": "1.0.0",
       "description": "Code review, test generation, and type safety commands with quality-focused hooks",
-      "tags": ["code-review", "testing", "type-safety"],
+      "tags": [
+        "code-review",
+        "testing",
+        "type-safety"
+      ],
       "downloads": 0,
       "stars": 0,
       "createdAt": "2026-02-16T00:00:00Z",
       "contents": {
-        "instructions": ["CLAUDE.md"],
-        "commands": ["review", "test-gen", "types"],
-        "hooks": ["post-save"]
+        "instructions": [
+          "CLAUDE.md"
+        ],
+        "commands": [
+          "review",
+          "test-gen",
+          "types"
+        ],
+        "hooks": [
+          "post-save"
+        ]
       }
     },
     {
@@ -39,14 +68,81 @@
       "author": "marketplace",
       "version": "1.0.0",
       "description": "Git workflow commands for PR creation, changelog generation, and commit management",
-      "tags": ["git", "workflow", "pull-requests"],
+      "tags": [
+        "git",
+        "workflow",
+        "pull-requests"
+      ],
       "downloads": 0,
       "stars": 0,
       "createdAt": "2026-02-16T00:00:00Z",
       "contents": {
-        "instructions": ["CLAUDE.md"],
-        "commands": ["pr", "changelog", "squash"],
-        "hooks": ["pre-push"]
+        "instructions": [
+          "CLAUDE.md"
+        ],
+        "commands": [
+          "pr",
+          "changelog",
+          "squash"
+        ],
+        "hooks": [
+          "pre-push"
+        ]
+      }
+    },
+    {
+      "name": "nori",
+      "author": "brennanr9",
+      "version": "1.0.0",
+      "description": "",
+      "tags": [],
+      "downloads": 0,
+      "stars": 0,
+      "createdAt": "2026-02-22T07:03:08.040Z",
+      "contents": {
+        "agents": [
+          "nori-change-documenter",
+          "nori-code-reviewer",
+          "nori-codebase-analyzer",
+          "nori-codebase-locator",
+          "nori-codebase-pattern-finder",
+          "nori-initial-documenter",
+          "nori-web-search-researcher",
+          "paid-nori-knowledge-researcher"
+        ],
+        "instructions": [
+          "CLAUDE.md"
+        ],
+        "commands": [
+          "nori-init-docs"
+        ],
+        "hooks": [
+          "pre-commit"
+        ],
+        "plugins": [
+          "blocklist",
+          "install-counts-cache",
+          "installed_plugins"
+        ],
+        "skills": [
+          "brainstorming",
+          "building-ui-ux",
+          "creating-debug-tests-and-iterating",
+          "creating-skills",
+          "finishing-a-development-branch",
+          "handle-large-tasks",
+          "receiving-code-review",
+          "root-cause-tracing",
+          "systematic-debugging",
+          "test-driven-development",
+          "testing-anti-patterns",
+          "updating-noridocs",
+          "using-git-worktrees",
+          "using-screenshots",
+          "using-skills",
+          "webapp-testing",
+          "writing-plans"
+        ]
       }
     }
   ]
